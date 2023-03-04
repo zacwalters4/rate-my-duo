@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/account" element={<Account />}>
           <Route index element={<Account />} />
-          <Route path=":region/:accountName" element={<Account />} />
+          <Route path=":accountName" element={<Account />} />
         </Route>
         <Route path="/404" element={<Error404 />} />
         <Route path="*" element={<Navigate to="/404" replace />}

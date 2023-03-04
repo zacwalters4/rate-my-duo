@@ -1,0 +1,23 @@
+form {
+    border-color: #197a76;
+    border-style: solid;
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: #8af8d6;
+}
+
+.region-select {
+    width: 10vw;
+    height: 5vh;
+    background-color: #8af8d6;
+    color: #00575c;
+    border: none;
+    font-weight: bold;
+}
+
+.search-input {
+    width: 20vw;
+    height: 5vh;
+    border: none;
+    font-weight: bold;
+}

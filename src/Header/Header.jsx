@@ -2,6 +2,7 @@ import React from 'react'
 import './Header.css'
 import { Link } from "react-router-dom"
 import { useLocation } from "react-router-dom"
+import Search from '../Search/Search'
 
 function Header() {
     const locationData = useLocation()
@@ -15,7 +16,7 @@ function Header() {
             {(activePage !== '/') &&
                 <button className="header-button">Rate my Duo</button>}
             </Link>
-
+            <Search />
         </header>
     )
   }

@@ -1,7 +1,8 @@
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 80vw;
     background-color: black;
     position: fixed;
@@ -29,3 +30,4 @@ header {
     color: #8af8d6;
     font-weight: bold;
 }
+

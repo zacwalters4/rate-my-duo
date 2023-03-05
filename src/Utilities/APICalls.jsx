@@ -9,7 +9,7 @@ export const fetchAccount = (account) => {
                 }
             })
             .then(data => {
-                return data['all-heroes'][1].stats
+                return data['all-heroes']
             })
     )
 }

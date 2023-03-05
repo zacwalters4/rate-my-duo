@@ -24,3 +24,11 @@
     border-color: #197a76;
     color: #197a76;
 }
+
+.account-name {
+    width: 30%;
+    text-align: left;
+    color: #8af8d6;
+    font-style: normal;
+    text-decoration: inherit;
+}

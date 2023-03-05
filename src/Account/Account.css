@@ -1,0 +1,19 @@
+.account-info {
+    color:#8af8d6;
+    width: 80vw;
+    text-align: left;
+}
+
+.account-info > h2 {
+    font-size: 4em;
+    margin-left: 1vw;
+}
+
+.account-stats {
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space;
+}
+

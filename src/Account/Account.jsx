@@ -1,8 +1,9 @@
 import React from 'react'
 import './Account.css'
 import { useLocation } from "react-router-dom"
-import { formatAccountName } from '../Utilities/Helper'
+import { formatAccountName, formatBattleTag } from '../Utilities/Helper'
 import { fetchAccount } from '../Utilities/APICalls'
+import StatBox from '../StatBox/StatBox'
 
 function Account() {
     const locationData = useLocation()
@@ -12,7 +13,8 @@ function Account() {
     const getAccount = () => {
         fetchAccount(accountName)
         .then(data => {
-            setAccountData(data)
+            setAccountData(data[1].stats)
+            setAccountData(accountName => [...accountName, data[2].stats[1], data[2].stats[2]] )   
         })
     }
 
@@ -22,8 +24,13 @@ function Account() {
 
     return (
         <main className="Account">
-            <div>
-                <h1>{accountName}</h1>
+            <div className="account-info">
+                <h2>{formatBattleTag(accountName)}</h2>
+            </div>
+            <div className="account-stats">
+                {accountData.map((stat, index) => {
+                    return ( <StatBox stat={stat} key={index} /> )
+                })}
             </div>
         </main>
     )

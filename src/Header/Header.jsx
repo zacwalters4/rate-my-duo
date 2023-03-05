@@ -10,13 +10,21 @@ function Header() {
 
     return (
         <header className="header">
+            <h1>Rate my Duo</h1>
             <Link to={`/`}>
             {(activePage == '/') &&
-                <button className="header-button active">Rate my Duo</button>}
+                <button className="header-button active">Home</button>}
             {(activePage !== '/') &&
-                <button className="header-button">Rate my Duo</button>}
+                <button className="header-button">Home</button>}
+            </Link>
+            <Link to={`/saved`}>
+            {(activePage == '/saved') &&
+                <button className="header-button active">Saved</button>}
+            {(activePage !== '/saved') &&
+                <button className="header-button">Saved</button>}
             </Link>
             <Search />
+
         </header>
     )
   }

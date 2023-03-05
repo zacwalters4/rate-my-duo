@@ -1,8 +1,14 @@
+.account-alignment {
+    display: flex;
+    justify-content: space-between;
+    width:80vw;
+}
+
+
 .account-info {
     color:#8af8d6;
-    width: 80vw;
     text-align: left;
-    margin-left: 2vw;
+    margin-left: 1vw;
 }
 
 .account-info > h2 {
@@ -28,3 +34,27 @@
     justify-content: space-between;
 }
 
+.save-button-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 1vw;
+}
+
+.save-button-container > button {
+    width: 12em;
+    background-color: black;
+    height: 3em;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.unsaved {
+    border-color: #8af8d6;
+    color:#8af8d6;
+}
+
+.saved {
+    border-color: #197a76;
+    color: #197a76;
+}

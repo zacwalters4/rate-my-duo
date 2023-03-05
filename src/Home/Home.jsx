@@ -1,11 +1,12 @@
 import React from 'react'
+import Search from '../Search/Search'
 import './Home.css'
 
 function Home() {
 
     return (
         <main className="Home">
-            <h1>hi</h1>
+            <Search />
         </main>
     )
   }

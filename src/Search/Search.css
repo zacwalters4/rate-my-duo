@@ -1,0 +1,16 @@
+form {
+    border-color: #197a76;
+    border-style: solid;
+    border-radius: 1em;
+    overflow: hidden;
+    display: flex;
+    width: 25em;
+    height: 3em;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-weight: bold;
+}

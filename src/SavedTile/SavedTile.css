@@ -1,0 +1,26 @@
+.saved-tile {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    height: 10vh;
+    border-bottom: solid;
+    color: #8af8d6;
+    border-color: #197a76;
+    font-size: 2em;
+}
+
+.saved-tile > p {
+    width: 30%;
+    text-align: left;
+}
+
+.saved-tile > button {
+    width: 12em;
+    background-color: black;
+    height: 3em;
+    border-style: solid;
+    cursor: pointer;
+    border-color: #197a76;
+    color: #197a76;
+}

@@ -9,7 +9,6 @@ import Saved from '../Saved/Saved'
 
 function App() {
 
-
   const [savedAccounts, saveAccount] = React.useState([
     {
         "accountName": "wutt-1337",

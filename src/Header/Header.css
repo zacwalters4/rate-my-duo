@@ -12,9 +12,16 @@ header {
     border-style: solid;
 }
 
+header > h1 {
+    color: #f9dd88;
+    font-style: italic;
+    font-size: 2.3em;
+    margin: 0;
+}
+
 .header-button {
     height: 10vh;
-    font-size: 3em;
+    font-size: 2em;
     background-color: black;
     color: #197a76;
     border: none;

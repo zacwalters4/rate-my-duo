@@ -2,11 +2,22 @@
     color:#8af8d6;
     width: 80vw;
     text-align: left;
+    margin-left: 2vw;
 }
 
 .account-info > h2 {
     font-size: 4em;
-    margin-left: 1vw;
+    font-style: italic;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.account-info > h1 {
+    font-size: 3em;
+    color: #197a76;
+    font-weight: normal;
+    margin-bottom: 0;
+
 }
 
 .account-stats {
@@ -14,6 +25,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space;
+    justify-content: space-between;
 }
 

@@ -10,7 +10,6 @@ function Account() {
     const locationData = useLocation()
     const accountName = formatAccountName(locationData.pathname)
     const [accountData, setAccountData] = React.useState([])
-    const [accountScore, setScore] = React.useState(0)
 
     const getAccount = () => {
         fetchAccount(accountName)
@@ -18,18 +17,17 @@ function Account() {
             setAccountData(data[1].stats)
             setAccountData(accountName => [...accountName, data[2].stats[1], data[2].stats[2]])
         })
-        .then(setScore(calculateScore(accountData)))
     }
 
     React.useEffect(() => {
         getAccount()
-      }, [])
+      }, [accountData])
 
     return (
         <main className="Account">
             <div className="account-info">
-                <h2>{formatBattleTag(accountName)}</h2>
-                <h2>{calculateScore(accountData)}</h2>
+                <h1>{formatBattleTag(accountName)}</h1>
+                {(accountData) && <h2>{calculateScore(accountData)}</h2>}
             </div>
             <div className="account-stats">
                 {accountData.map((stat, index) => {

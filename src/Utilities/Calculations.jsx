@@ -1,5 +1,4 @@
 export const calculateScore = (accountStats) => {
-    console.log(accountStats)
     let score = 10000
     let gamesPlayed = 0
     let gamesWon = 0

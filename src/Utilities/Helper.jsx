@@ -19,7 +19,4 @@ export const formatLabel = (label) => {
     } else {
         return label
     }
-    // let fixedLabel = label.replace(' - Avg per 10 Min', '')
-    // fixedLabel = label.replace(' - Avg per 10 min', '')
-    // return fixedLabel
 }

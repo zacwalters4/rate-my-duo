@@ -1,0 +1,20 @@
+.home > p {
+    margin: 0;
+    color:#8af8d6;
+}
+
+.about-box {
+    margin-top: 5vw;
+    color:#197a76;
+    text-align: left;
+    width: 60vw;
+}
+
+.about-box > h2 {
+    border-bottom: #197a7782 solid;
+    font-size: 2em;
+}
+
+.about-box > p {
+    color:#8af8d6;
+}

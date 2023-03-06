@@ -27,7 +27,7 @@ function Search() {
             <input
                 className="search-input"
                 type="text"
-                placeholder="Enter an account name..."
+                placeholder="Enter a battletag..."
                 value={searchInput}
                 onChange={handleChangeSearch}
             />

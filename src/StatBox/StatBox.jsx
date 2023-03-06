@@ -2,6 +2,7 @@ import React from 'react'
 import Search from '../Search/Search'
 import { formatLabel } from '../Utilities/Helper'
 import './StatBox.css'
+import PropTypes from 'prop-types'
 
 function StatBox(props) {
     return (
@@ -12,4 +13,14 @@ function StatBox(props) {
     )
   }
   
-  export default StatBox
+export default StatBox
+
+StatBox.propTypes = {
+    props: PropTypes.shape({
+        stat: PropTypes.shape({
+            key: PropTypes.string.isRequired,
+            label: PropTypes.string.isRequired,
+            value: PropTypes.number.isRequired,
+        })
+    })
+  }

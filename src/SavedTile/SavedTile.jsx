@@ -2,6 +2,7 @@ import React from 'react'
 import { formatBattleTag } from '../Utilities/Helper'
 import './SavedTile.css'
 import { Link } from "react-router-dom"
+import PropTypes from 'prop-types'
 
 function SavedTile(props) {
     const deleteSaved = (e) => {
@@ -22,4 +23,14 @@ function SavedTile(props) {
     )
   }
   
-  export default SavedTile
+export default SavedTile
+
+SavedTile.propTypes = {
+    props: PropTypes.shape({
+        saveAccount: PropTypes.func.isRequired,
+        account: PropTypes.shape({
+            accountName: PropTypes.string.isRequired,
+            accountScore: PropTypes.number.isRequired
+        })
+    })
+  }

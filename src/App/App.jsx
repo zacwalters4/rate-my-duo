@@ -9,16 +9,7 @@ import Saved from '../Saved/Saved'
 
 function App() {
 
-  const [savedAccounts, saveAccount] = React.useState([
-    {
-        "accountName": "wutt-1337",
-        "accountScore": 182826
-    },
-    {
-        "accountName": "Rokit-11457",
-        "accountScore": 416045
-    }
-])
+  const [savedAccounts, saveAccount] = React.useState([])
 
   return (
     <div className="App">

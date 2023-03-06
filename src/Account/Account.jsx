@@ -5,6 +5,7 @@ import { formatAccountName, formatBattleTag } from '../Utilities/Helper'
 import { fetchAccount } from '../Utilities/APICalls'
 import StatBox from '../StatBox/StatBox'
 import { calculateScore } from '../Utilities/Calculations'
+import PropTypes from 'prop-types'
 
 function Account(props) {
     const locationData = useLocation()
@@ -64,3 +65,10 @@ function Account(props) {
   }
   
   export default Account
+
+  Account.propTypes = {
+    props: PropTypes.shape({
+        saveAccount: PropTypes.func.isRequired,
+        savedAccounts: PropTypes.arrayOf(PropTypes.object)
+    })
+  }

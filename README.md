@@ -1,6 +1,6 @@
-# Oh Crepe
+# Rate my Duo
 
-### [Deployed Project]()
+### [Deployed Project](https://rate-my-duo.vercel.app/)
 
 <p align="left">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
@@ -27,8 +27,10 @@ Thanks to the [Overfast API](https://overfast-api.tekrop.fr/)
 - [Zac Walters](https://github.com/zacwalters4)
 
 ## Preview
+![Rate my Duo preview](https://user-images.githubusercontent.com/22826695/223025583-1e87c69f-6477-4654-9dcb-46a20d65666c.gif)
 
 ## Concept
+![Rate my Duo concept](https://user-images.githubusercontent.com/22826695/223016922-66fe68f9-a72c-47e6-ab0b-370a0594fd7e.png)
 
 ## Tech Used
 - React
